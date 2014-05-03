@@ -33,12 +33,20 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.ghostchat.ChatActivity" />
+<<<<<<< HEAD
+=======
+
+>>>>>>> 386aa580420e7172afd4288a4385250202111c07
             android:name="com.example.ghostchat.ContactListView"
             android:label="@string/title_activity_contact_list_view"
             android:parentActivityName="com.example.ghostchat.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.ghostchat.MainActivity" />
+<<<<<<< HEAD
+=======
+
+>>>>>>> 386aa580420e7172afd4288a4385250202111c07
         </activity>
     </application>
 
