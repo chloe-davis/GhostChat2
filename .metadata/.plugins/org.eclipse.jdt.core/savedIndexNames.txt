@@ -1,0 +1,2 @@
+INDEX VERSION 1.126+/Users/arghliaboo/Documents/workspace/hackathon/ghostchat/.metadata/.plugins/org.eclipse.jdt.core
+1270315800.index
