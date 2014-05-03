@@ -1,35 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <<<<<<< HEAD
-
 <resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android1="http://schemas.android.com/apk/res/android">
-
-<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android1="http://schemas.android.com/apk/res/android">
-
 =======
+
 <resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android1="http://schemas.android.com/apk/res/android">
->>>>>>> FETCH_HEAD
+
+>>>>>>> 386aa580420e7172afd4288a4385250202111c07
 
     <string name="app_name">GhostChat</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 <<<<<<< HEAD
-
     <string name="title_activity_chat">ChatActivity</string>
     <string name="title_activity_display_message">DisplayMessageActivity</string>
     <string android:id="@+id/string1" android:layout_width="wrap_content" android:layout_height="wrap_content" name="edit_message">edit</string>
-
-
-    <string name="title_activity_chat">ChatActivity</string>
-    <string name="title_activity_display_message">DisplayMessageActivity</string>
-    <string android:id="@+id/string1" android:layout_width="wrap_content" android:layout_height="wrap_content" name="edit_message">edit</string>
-
-
 =======
+
     <string name="title_activity_chat">ChatActivity</string>
     <string name="title_activity_display_message">DisplayMessageActivity</string>
     <string android:id="@+id/string1" android:layout_width="wrap_content" android:layout_height="wrap_content" name="edit_message">edit</string>
->>>>>>> FETCH_HEAD
+
+>>>>>>> 386aa580420e7172afd4288a4385250202111c07
     <string android:id="@+id/string1" name="future_password" android:layout_width="wrap_content" android:layout_height="wrap_content">Future Password Feature</string>
     <string name="title_activity_contact_list_view">ContactListView</string>
 
