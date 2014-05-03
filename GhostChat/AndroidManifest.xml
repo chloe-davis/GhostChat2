@@ -22,6 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.ghostchat.ContactListView"
+            android:label="@string/title_activity_contact_list_view"
+            android:parentActivityName="com.example.ghostchat.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ghostchat.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

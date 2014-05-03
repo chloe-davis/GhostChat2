@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">GhostChat</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string android:id="@+id/string1" name="future_password" android:layout_width="wrap_content" android:layout_height="wrap_content">Future Password Feature</string>
+    <string name="title_activity_contact_list_view">ContactListView</string>
+
+</resources>
