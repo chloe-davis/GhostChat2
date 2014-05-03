@@ -44,7 +44,6 @@ public class ContactListView extends ActionBarActivity {
 				String contactName = (String) listView.getItemAtPosition(pos);
 				intent = new Intent(this, ChatActivity.class);
 				intent.putExtra(EXTRA_MESSAGE, contactName);
-				startActivity(intent);
 			}
 		});
 		
