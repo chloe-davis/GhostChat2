@@ -3,12 +3,14 @@ package com.example.ghostchat;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.os.Build;
 import android.content.Intent;
 import android.widget.EditText;
@@ -66,6 +68,7 @@ public class MainActivity extends ActionBarActivity {
         }
     }
     
+<<<<<<< HEAD
     /** Called when the user clicks the Send button */
     public void sendMessage(View view) {
         // Do something in response to button
@@ -74,6 +77,13 @@ public class MainActivity extends ActionBarActivity {
     	//String message = editText.getText().toString();
     	//intent.putExtra(EXTRA_MESSAGE, message);
     	//startActivity(intent);
+=======
+    public void gotoMessage(View view){
+    	Intent intent = getIntent();
+    	intent = new Intent(this, ContactListView.class);
+    	startActivity(intent);
+    	
+>>>>>>> FETCH_HEAD
     }
 
 }

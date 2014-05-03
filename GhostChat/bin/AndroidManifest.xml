@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity
+<<<<<<< HEAD
             android:name="com.example.ghostchat.ChatActivity"
             android:label="@string/title_activity_chat" >
         </activity>
@@ -33,6 +34,14 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.ghostchat.ChatActivity" />
+=======
+            android:name="com.example.ghostchat.ContactListView"
+            android:label="@string/title_activity_contact_list_view"
+            android:parentActivityName="com.example.ghostchat.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ghostchat.MainActivity" />
+>>>>>>> FETCH_HEAD
         </activity>
     </application>
 
