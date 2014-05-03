@@ -12,13 +12,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.os.Build;
-import android.content.Intent;
-import android.widget.EditText;
 
 public class MainActivity extends ActionBarActivity {
-	
-	public final static String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
-	
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,23 +64,11 @@ public class MainActivity extends ActionBarActivity {
         }
     }
     
-
-    /** Called when the user clicks the Send button */
-    public void sendMessage(View view) {
-        // Do something in response to button
-    	//Intent intent = new Intent(this, DisplayMessageActivity.class);
-    	//EditText editText = (EditText) findViewById(R.id.edit_message);
-    	//String message = editText.getText().toString();
-    	//intent.putExtra(EXTRA_MESSAGE, message);
-    	//startActivity(intent);
-    }
-
     public void gotoMessage(View view){
     	Intent intent = getIntent();
     	intent = new Intent(this, ContactListView.class);
     	startActivity(intent);
     	
-
     }
 
 }
