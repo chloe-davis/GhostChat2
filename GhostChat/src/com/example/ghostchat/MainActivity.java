@@ -68,7 +68,7 @@ public class MainActivity extends ActionBarActivity {
         }
     }
     
-<<<<<<< HEAD
+
     /** Called when the user clicks the Send button */
     public void sendMessage(View view) {
         // Do something in response to button
@@ -77,13 +77,14 @@ public class MainActivity extends ActionBarActivity {
     	//String message = editText.getText().toString();
     	//intent.putExtra(EXTRA_MESSAGE, message);
     	//startActivity(intent);
-=======
+    }
+
     public void gotoMessage(View view){
     	Intent intent = getIntent();
     	intent = new Intent(this, ContactListView.class);
     	startActivity(intent);
     	
->>>>>>> FETCH_HEAD
+
     }
 
 }
