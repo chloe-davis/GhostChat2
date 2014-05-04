@@ -1,7 +1,6 @@
 package com.example.ghostchat;
 
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,7 +12,6 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.os.Build;
 
 public class ContactListView extends ActionBarActivity {
 
@@ -25,7 +23,7 @@ public class ContactListView extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.fragment_contact_list_view);
 		
-		
+		getActionBar().setTitle("Messages");
 		
 		listView = (ListView) findViewById(R.id.contactList);
 			
@@ -42,7 +40,7 @@ public class ContactListView extends ActionBarActivity {
 				
 				Intent intent = getIntent();
 				String contactName = (String) listView.getItemAtPosition(pos);
-//				intent = new Intent(this, ChatActivity.class);
+				intent = new Intent(getApplicationContext(), ChatActivity.class);
 				intent.putExtra(EXTRA_MESSAGE, contactName);
 				startActivity(intent);
 			}

@@ -1,15 +1,16 @@
 package com.example.ghostchat;
 
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class ChatActivity extends ActionBarActivity {
 
@@ -17,6 +18,11 @@ public class ChatActivity extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_chat);
+		
+		Intent intent = getIntent();
+		String message = intent.getStringExtra(ContactListView.EXTRA_MESSAGE);
+		
+		getActionBar().setTitle(message);
 
 		if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction()
@@ -59,6 +65,14 @@ public class ChatActivity extends ActionBarActivity {
 					false);
 			return rootView;
 		}
+	}
+	
+	public void sendAMessage(View view){
+		EditText editText = (EditText) findViewById(R.id.send_button);
+		String message = editText.getText().toString();
+		TextView textView = new TextView(this);
+		textView.setText(message);
+		
 	}
 
 }

@@ -9,11 +9,22 @@
     tools:context="com.example.ghostchat.ChatActivity$PlaceholderFragment" >
 
     <Button
+        android:id="@+id/send_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:onClick="sendMessage"
-        android:text="Send" />
+        android:onClick="sendAMessage"
+        android:text="@string/send_message" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/send_button"
+        android:layout_toLeftOf="@+id/send_button"
+        android:layout_weight="1"
+        android:ems="10"
+        android:text="@string/enter_message" />
 
 </RelativeLayout>
